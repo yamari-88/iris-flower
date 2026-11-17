@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Наши букеты — Ирис, цветочный салон</title>
+<meta name="description" content="Каталог букетов цветочного салона «Ирис». Соберем букет под ваш повод и бюджет.">
+<meta name="theme-color" content="#6b1f5c">
+<meta property="og:title" content="Наши букеты — Ирис, цветочный салон">
+<meta property="og:description" content="Каталог букетов цветочного салона «Ирис». Соберем букет под ваш повод и бюджет.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="Ирис — на главную"><b>ИРИС</b><small>цветочный салон</small></a>
+    <nav class="nav" aria-label="Основное меню"><a href="bouquets.html" aria-current="page">Наши букеты</a><a href="order.html">Как заказать</a><a href="about.html">О салоне</a></nav>
+    <a class="phone header-phone" href="tel:+79183335681"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>8(918)333-56-81</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Меню">
+  <div class="top">
+    <a class="logo" href="index.html"><b>ИРИС</b><small>цветочный салон</small></a>
+    <button class="close" id="menu-close" aria-label="Закрыть меню">×</button>
+  </div>
+  <nav aria-label="Мобильное меню"><a href="bouquets.html" aria-current="page">Наши букеты</a><a href="order.html">Как заказать</a><a href="about.html">О салоне</a></nav>
+  <a class="phone" href="tel:+79183335681"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>8(918)333-56-81</a>
+  <a class="btn" href="tel:+79183335681">Связаться с нами <svg class="arr" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 8 2M3 2h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+
+<main class="page page--bouquets">
+
+<div class="deco deco--bouquets" aria-hidden="true"></div>
+<section class="section"><div class="container">
+  <h1>Наши букеты</h1>
+  <p class="note" style="margin-top:14px">Стоимость зависит от состава и сезона. Уточним под ваш бюджет, соберем букет под ваш повод.</p>
+  <div class="filters" role="tablist" aria-label="Категории">
+    <button class="is-active" data-filter="all">Все</button>
+    <button data-filter="tender">Нежные</button>
+    <button data-filter="garden">Садовые</button>
+    <button data-filter="mono">Моно</button>
+    <button data-filter="special">Для особого случая</button>
+    <button data-filter="unusual">Необычные</button>
+  </div>
+  <div class="bouquets"><article class="bouquet" data-cat="tender"><img src="img/bouquet-1.webp" alt="Букет «Сиреневый туман» из белой гортензии, лиловой маттиолы и розовых хризантем" width="900" height="1200" loading="lazy" decoding="async"><h3>Сиреневый туман</h3><p>Белая гортензия, лиловая маттиола и розовые хризантемы. Нежный букет в сиреневой упаковке.</p><a class="btn" href="tel:+79183335681">Хочу такой букет</a></article><article class="bouquet" data-cat="garden"><img src="img/bouquet-2.webp" alt="Букет «Сиреневый вечер» из кустовых роз, хризантем и фиолетовых цветов" width="900" height="1200" loading="lazy" decoding="async"><h3>Сиреневый вечер</h3><p>Кустовые розы, хризантемы и тёмно-фиолетовые акценты. Садовый букет с лёгкими колосками.</p><a class="btn" href="tel:+79183335681">Хочу такой букет</a></article><article class="bouquet" data-cat="tender"><img src="img/bouquet-3.webp" alt="Букет «Хлопковое облако» из белых хризантем, розовых роз и хлопка" width="760" height="1013" loading="lazy" decoding="async"><h3>Хлопковое облако</h3><p>Белые хризантемы, розовые кустовые розы и хлопок. Мягкий букет с жемчужной отделкой.</p><a class="btn" href="tel:+79183335681">Хочу такой букет</a></article><article class="bouquet" data-cat="mono special"><img src="img/bouquet-4.webp" alt="Букет «Алый жемчуг» из красных роз с жемчужными нитями" width="760" height="1013" loading="lazy" decoding="async"><h3>Алый жемчуг</h3><p>Красные розы с нитями жемчуга в мятной упаковке. Для особого повода.</p><a class="btn" href="tel:+79183335681">Хочу такой букет</a></article><article class="bouquet" data-cat="special"><img src="img/bouquet-5.webp" alt="Букет «Бордо» из красно-оранжевых роз и эвкалипта" width="579" height="772" loading="lazy" decoding="async"><h3>Бордо</h3><p>Красно-оранжевые розы, пионовидные кустовые розы и эвкалипт в бордовой упаковке.</p><a class="btn" href="tel:+79183335681">Хочу такой букет</a></article><article class="bouquet" data-cat="tender special"><img src="img/bouquet-6.webp" alt="Цветочная коробка «Розовый комплимент» с герберами, эустомой и розами" width="900" height="1200" loading="lazy" decoding="async"><h3>Розовый комплимент</h3><p>Герберы, эустома и розы в нежной коробке с жемчужным декором.</p><a class="btn" href="tel:+79183335681">Хочу такой букет</a></article><article class="bouquet" data-cat="unusual"><img src="img/bouquet-7.webp" alt="Хризантемы в крафтовом стаканчике с логотипом салона" width="900" height="1200" loading="lazy" decoding="async"><h3>Кофе и хризантемы</h3><p>Хризантемы в крафтовом стаканчике с логотипом салона. Небольшой необычный подарок.</p><a class="btn" href="tel:+79183335681">Хочу такой букет</a></article><article class="bouquet" data-cat="unusual"><img src="img/bouquet-8.webp" alt="Необычный букет с розами, гвоздиками и цитрусами" width="900" height="1200" loading="lazy" decoding="async"><h3>Необычный букет</h3><p>Необычный букет с наполнением под ваш запрос. Расскажите, что вам нужно, и мы соберем.</p><a class="btn" href="tel:+79183335681">Хочу такой букет</a></article></div>
+  <p class="empty hidden" id="empty">В этой категории пока нет букетов. Напишите нам, и мы соберем под ваш повод.</p>
+</div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html"><b>ИРИС</b><small>цветочный салон</small></a>
+        <p class="footer-desc">Цветы с доставкой, кофе<br>и шиншилла в пгт Черноморский</p>
+        <div class="socials">
+          <a href="https://vk.ru/id1106117199" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg viewBox="0 0 48 30" aria-hidden="true"><path d="M26 30C9.6 30 .3 18.7 0 0h8.2c.3 13.8 6.3 19.6 11.1 20.8V0h7.7v11.9C31.7 11.4 36.7 6 38.4 0h7.7c-1.3 7.3-6.7 12.7-10.5 14.9C39.4 16.8 45.5 21.5 48 30h-8.5c-1.8-5.7-6.3-10.1-12.5-10.7V30H26z"/></svg></a>
+          <a href="https://yandex.ru/maps/?text=%D0%98%D1%80%D0%B8%D1%81%20%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%20%D1%81%D0%B0%D0%BB%D0%BE%D0%BD%20%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%AE%D0%B1%D0%B8%D0%BB%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F%2058%D0%91" target="_blank" rel="noopener" aria-label="Мы на Яндекс Картах"><svg viewBox="0 0 24 30" aria-hidden="true"><path d="M14.7 30V19.2h-2.8L6.7 30H2.6l5.6-11.2C4.7 17.3 2.8 14.5 2.8 10.7 2.8 5 6.7 1.5 12.7 1.5H19V30h-4.3zm0-25.1h-1.8c-3.3 0-5 1.8-5 5.6 0 3.6 1.9 5.3 5.1 5.3h1.7V4.9z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <ul><li><a href="bouquets.html">Наши букеты</a></li><li><a href="order.html">Как заказать</a></li><li><a href="about.html">О салоне</a></li></ul>
+      </div>
+      <div class="footer-contacts">
+        <h3>Контакты</h3>
+        <p>пгт Черноморский,<br>ул. Юбилейная 58Б<br>ежедневно<br>09:00 – 22:00<br><a href="tel:+79183335681">8(918)333-56-81</a></p>
+        <a class="btn btn--light" href="tel:+79183335681">Связаться с нами <svg class="arr" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 8 8 2M3 2h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <p class="copy">© Ирис, 2026</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
